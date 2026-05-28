@@ -1,0 +1,5 @@
+LIBRARY
+EXPORTS
+	Decoder_Interface_init
+	Decoder_Interface_exit
+	Decoder_Interface_Decode
