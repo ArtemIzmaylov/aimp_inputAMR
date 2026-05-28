@@ -7,7 +7,7 @@
 #include "Decoder.h"
 
 static const TChar Author[] = TEXT("Artem Izmaylov");
-static const TChar Name[] = TEXT("AMR-NB Decoder v1.10");
+static const TChar Name[] = TEXT("AMR-NB/WB Decoder v1.10");
 static const TChar Description[] = TEXT("Based on OpenCore-AMR Library");
 static const TChar DescriptionFull[] = TEXT("*.amr;\nhttp://sourceforge.net/projects/opencore-amr/");
 
