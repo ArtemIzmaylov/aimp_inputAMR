@@ -5,9 +5,15 @@ interface
 uses
   Windows,
   // API
-  apiPlugin, apiCore, apiObjects, apiDecoders, apiFileManager, apiWrappers,
+  apiPlugin,
+  apiCore,
+  apiObjects,
+  apiDecoders,
+  apiFileManager,
+  apiWrappers,
   // Plugin
-  AIMP.InputAMR.Decoder, AIMPCustomPlugin;
+  AIMP.InputAMR.Decoder,
+  AIMPCustomPlugin;
 
 type
 

@@ -32,7 +32,7 @@ type
     BytesPerFrame = SampleRate * Channels * BitDepth div 8 * FrameDuration div 1000;
 
   strict private
-    FBufferARM: TACLCustomByteBuffer;
+    FBufferARM: TACLByteBuffer;
     FBufferPCM: TACLRemovableByteBuffer;
     FFrames: Integer;
     FHandle: Pointer;
@@ -52,7 +52,7 @@ type
     destructor Destroy; override;
     function ReadFrameAndDecodeIt: Boolean;
 
-    property BufferARM: TACLCustomByteBuffer read FBufferARM;
+    property BufferARM: TACLByteBuffer read FBufferARM;
     property BufferPCM: TACLRemovableByteBuffer read FBufferPCM;
     property Frame: Integer read GetFrame write SetFrame;
     property Frames: Integer read FFrames;
@@ -79,7 +79,7 @@ begin
   inherited Create;
   FStream := AStream;
   FSeekTable := TList<Int64>.Create;
-  FBufferARM := TACLCustomByteBuffer.Create(FrameMaxSize);
+  FBufferARM := TACLByteBuffer.Create(FrameMaxSize);
   FBufferPCM := TACLRemovableByteBuffer.Create(BytesPerFrame);
 
   CheckFileHeader;
