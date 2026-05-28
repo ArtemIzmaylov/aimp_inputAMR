@@ -17,8 +17,8 @@
  */
 
 #define AMRNB_WRAPPER_INTERNAL
-#include <sp_dec.h>
-#include <amrdecode.h>
+#include "sp_dec.h"
+#include "amrdecode.h"
 #include "interf_dec.h"
 #include "interf_enc.h"
 #include <stdlib.h>

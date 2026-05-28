@@ -1,0 +1,687 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\openamr">
+      <UniqueIdentifier>{ce89241a-5513-4d25-ade4-3b0d76c1a693}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\openamr">
+      <UniqueIdentifier>{aaad044b-c233-4cfc-8836-44361db9eee8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\a_refl.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\abs_s.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\add.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\agc.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\amrdecode.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\az_lsp.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\b_cn_cod.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\basic_op.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\basic_op_arm_gcc_v5.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\basic_op_c_equivalent.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\basicop_malloc.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\bgnscd.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\bitno_tab.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\bitreorder_tab.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\bytesused.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\c_g_aver.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\cnst.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\cnst_vad.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\d_gain_c.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\d_gain_p.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\d_plsf.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\d2_9pf.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\d2_11pf.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\d3_14pf.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\d4_17pf.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\d8_31pf.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\d1035pf.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\dec_amr.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\dec_gain.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\dec_lag3.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\dec_lag6.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\div_s.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\dtx_common_def.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\dtx_dec.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\ec_gains.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\ex_ctrl.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\frame.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\frame_type_3gpp.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\gc_pred.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\get_const_tbls.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\gmed_n.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\gsm_amr_typedefs.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\gsmamr_dec.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\if2_to_ets.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\int_lpc.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\int_lsf.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\interf_dec.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\interf_enc.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\inv_sqrt.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="aimp_sdk\IUnknownImpl.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\l_add.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\l_add_c.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\l_comp.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\l_extract.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\l_mac.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\l_msu.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\l_mult.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\l_negate.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\l_shl.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\l_shr.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\l_shr_r.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\l_sub.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\log2.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\log2_norm.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\lsfwt.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\lsp.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\lsp_avg.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\lsp_az.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\lsp_lsf.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\lsp_tab.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\mac_32.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\mode.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\mpy_32.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\mpy_32_16.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\mult.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\mult_r.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\n_proc.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\negate.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\norm_l.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\norm_s.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\oper_32b.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\oscl_base.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\oscl_base_macros.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\oscl_mem.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\p_ol_wgh.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\ph_disp.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\post_pro.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\pow2.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\pred_lt.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\preemph.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\pstfilt.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\pvamrnbdecoder_api.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\pvgsmamr.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\pvgsmamrdecoder.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\pvgsmamrdecoder_dpi.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\pvgsmamrdecoderinterface.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\q_plsf.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\q_plsf_3_tbl.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\q_plsf_5_tbl.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\qgain475_tab.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\qua_gain.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\qua_gain_tbl.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\reorder.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\residu.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\reverse_bits.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\round.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\set_zero.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\shl.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\shr.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\shr_r.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\sp_dec.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\sqrt_l.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\sub.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\syn_filt.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\typedef.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\weight_a.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\window_tab.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="amrnb\wmf_to_ets.h">
+      <Filter>Header Files\openamr</Filter>
+    </ClInclude>
+    <ClInclude Include="Decoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Plugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\a_refl.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\add.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\agc.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\amrdecode.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="aimp_sdk\apiTypes.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="aimp_sdk\Helpers\apiWrappers.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\az_lsp.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\b_cn_cod.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\bgnscd.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\bitno_tab.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\bitreorder_tab.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\c_g_aver.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\c2_9pf_tab.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\d_gain_c.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\d_gain_p.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\d_plsf.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\d_plsf_3.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\d_plsf_5.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\d2_9pf.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\d2_11pf.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\d3_14pf.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\d4_17pf.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\d8_31pf.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\d1035pf.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\dec_amr.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\dec_gain.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\dec_input_format_tab.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\dec_lag3.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\dec_lag6.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\div_32.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\div_s.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\dtx_dec.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\ec_gains.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\ex_ctrl.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\extract_h.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\extract_l.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\gains_tbl.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\gc_pred.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\get_const_tbls.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\gmed_n.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\gray_tbl.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\grid_tbl.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\if2_to_ets.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\int_lpc.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\int_lsf.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\inv_sqrt.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\inv_sqrt_tbl.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\l_abs.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\l_deposit_h.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\l_deposit_l.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\l_shr_r.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\log2.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\log2_norm.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\log2_tbl.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\lsfwt.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\lsp.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\lsp_avg.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\lsp_az.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\lsp_lsf.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\lsp_lsf_tbl.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\lsp_tab.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\mult_r.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\negate.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\norm_l.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\norm_s.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\overflow_tbl.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\ph_disp.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\ph_disp_tab.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\post_pro.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\pow2.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\pow2_tbl.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\pred_lt.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\preemph.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\pstfilt.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\pvgsmamrdecoder.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\q_plsf.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\q_plsf_3.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\q_plsf_3_tbl.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\q_plsf_5.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\q_plsf_5_tbl.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\qgain475_tab.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\qua_gain_tbl.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\reorder.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\residu.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\round.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\set_zero.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\shr.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\shr_r.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\sp_dec.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\sqrt_l.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\sqrt_l_tbl.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\sub.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\syn_filt.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="aimp_sdk\testAll.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\weight_a.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\window_tab.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\wmf_to_ets.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="amrnb\wrapper.cpp">
+      <Filter>Source Files\openamr</Filter>
+    </ClCompile>
+    <ClCompile Include="Decoder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

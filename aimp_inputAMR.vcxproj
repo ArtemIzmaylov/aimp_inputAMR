@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>18.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{f37abdfc-072e-4854-a7f6-ff7468a5b2c7}</ProjectGuid>
+    <RootNamespace>aimpinputAMR</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)\obj\x32\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\obj\x32\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)\obj\x32\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\obj\x32\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)\obj\x64\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\obj\x64\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)\obj\x64\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\obj\x64\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;AIMPINPUTAMR_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>.\aimp_sdk;.\aimp_sdk\Helpers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <OutputFile>d:\Projects\AIMP\AIMP4Windows\trunk\AIMP\Binary\Win32\Plugins\aimp_inputAMR\$(TargetName)$(TargetExt)</OutputFile>
+      <ModuleDefinitionFile>aimp_inputAMR.def</ModuleDefinitionFile>
+    </Link>
+    <Manifest>
+      <EnableSegmentHeap>true</EnableSegmentHeap>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;AIMPINPUTAMR_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>.\aimp_sdk;.\aimp_sdk\Helpers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <OutputFile>.\aimp_inputAMR\$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+    <Manifest>
+      <EnableSegmentHeap>true</EnableSegmentHeap>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;AIMPINPUTAMR_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>.\aimp_sdk;.\aimp_sdk\Helpers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <OutputFile>.\aimp_inputAMR\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <ModuleDefinitionFile>aimp_inputAMR.def</ModuleDefinitionFile>
+    </Link>
+    <Manifest>
+      <EnableSegmentHeap>true</EnableSegmentHeap>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;AIMPINPUTAMR_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>.\aimp_sdk;.\aimp_sdk\Helpers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <OutputFile>.\aimp_inputAMR\x64\$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+    <Manifest>
+      <EnableSegmentHeap>true</EnableSegmentHeap>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="aimp_sdk\IUnknownImpl.h" />
+    <ClInclude Include="amrnb\abs_s.h" />
+    <ClInclude Include="amrnb\add.h" />
+    <ClInclude Include="amrnb\agc.h" />
+    <ClInclude Include="amrnb\amrdecode.h" />
+    <ClInclude Include="amrnb\az_lsp.h" />
+    <ClInclude Include="amrnb\a_refl.h" />
+    <ClInclude Include="amrnb\basicop_malloc.h" />
+    <ClInclude Include="amrnb\basic_op.h" />
+    <ClInclude Include="amrnb\basic_op_arm_gcc_v5.h" />
+    <ClInclude Include="amrnb\basic_op_c_equivalent.h" />
+    <ClInclude Include="amrnb\bgnscd.h" />
+    <ClInclude Include="amrnb\bitno_tab.h" />
+    <ClInclude Include="amrnb\bitreorder_tab.h" />
+    <ClInclude Include="amrnb\bytesused.h" />
+    <ClInclude Include="amrnb\b_cn_cod.h" />
+    <ClInclude Include="amrnb\cnst.h" />
+    <ClInclude Include="amrnb\cnst_vad.h" />
+    <ClInclude Include="amrnb\c_g_aver.h" />
+    <ClInclude Include="amrnb\d1035pf.h" />
+    <ClInclude Include="amrnb\d2_11pf.h" />
+    <ClInclude Include="amrnb\d2_9pf.h" />
+    <ClInclude Include="amrnb\d3_14pf.h" />
+    <ClInclude Include="amrnb\d4_17pf.h" />
+    <ClInclude Include="amrnb\d8_31pf.h" />
+    <ClInclude Include="amrnb\dec_amr.h" />
+    <ClInclude Include="amrnb\dec_gain.h" />
+    <ClInclude Include="amrnb\dec_lag3.h" />
+    <ClInclude Include="amrnb\dec_lag6.h" />
+    <ClInclude Include="amrnb\div_s.h" />
+    <ClInclude Include="amrnb\dtx_common_def.h" />
+    <ClInclude Include="amrnb\dtx_dec.h" />
+    <ClInclude Include="amrnb\d_gain_c.h" />
+    <ClInclude Include="amrnb\d_gain_p.h" />
+    <ClInclude Include="amrnb\d_plsf.h" />
+    <ClInclude Include="amrnb\ec_gains.h" />
+    <ClInclude Include="amrnb\ex_ctrl.h" />
+    <ClInclude Include="amrnb\frame.h" />
+    <ClInclude Include="amrnb\frame_type_3gpp.h" />
+    <ClInclude Include="amrnb\gc_pred.h" />
+    <ClInclude Include="amrnb\get_const_tbls.h" />
+    <ClInclude Include="amrnb\gmed_n.h" />
+    <ClInclude Include="amrnb\gsmamr_dec.h" />
+    <ClInclude Include="amrnb\gsm_amr_typedefs.h" />
+    <ClInclude Include="amrnb\if2_to_ets.h" />
+    <ClInclude Include="amrnb\interf_dec.h" />
+    <ClInclude Include="amrnb\interf_enc.h" />
+    <ClInclude Include="amrnb\int_lpc.h" />
+    <ClInclude Include="amrnb\int_lsf.h" />
+    <ClInclude Include="amrnb\inv_sqrt.h" />
+    <ClInclude Include="amrnb\log2.h" />
+    <ClInclude Include="amrnb\log2_norm.h" />
+    <ClInclude Include="amrnb\lsfwt.h" />
+    <ClInclude Include="amrnb\lsp.h" />
+    <ClInclude Include="amrnb\lsp_avg.h" />
+    <ClInclude Include="amrnb\lsp_az.h" />
+    <ClInclude Include="amrnb\lsp_lsf.h" />
+    <ClInclude Include="amrnb\lsp_tab.h" />
+    <ClInclude Include="amrnb\l_add.h" />
+    <ClInclude Include="amrnb\l_add_c.h" />
+    <ClInclude Include="amrnb\l_comp.h" />
+    <ClInclude Include="amrnb\l_extract.h" />
+    <ClInclude Include="amrnb\l_mac.h" />
+    <ClInclude Include="amrnb\l_msu.h" />
+    <ClInclude Include="amrnb\l_mult.h" />
+    <ClInclude Include="amrnb\l_negate.h" />
+    <ClInclude Include="amrnb\l_shl.h" />
+    <ClInclude Include="amrnb\l_shr.h" />
+    <ClInclude Include="amrnb\l_shr_r.h" />
+    <ClInclude Include="amrnb\l_sub.h" />
+    <ClInclude Include="amrnb\mac_32.h" />
+    <ClInclude Include="amrnb\mode.h" />
+    <ClInclude Include="amrnb\mpy_32.h" />
+    <ClInclude Include="amrnb\mpy_32_16.h" />
+    <ClInclude Include="amrnb\mult.h" />
+    <ClInclude Include="amrnb\mult_r.h" />
+    <ClInclude Include="amrnb\negate.h" />
+    <ClInclude Include="amrnb\norm_l.h" />
+    <ClInclude Include="amrnb\norm_s.h" />
+    <ClInclude Include="amrnb\n_proc.h" />
+    <ClInclude Include="amrnb\oper_32b.h" />
+    <ClInclude Include="amrnb\oscl_base.h" />
+    <ClInclude Include="amrnb\oscl_base_macros.h" />
+    <ClInclude Include="amrnb\oscl_mem.h" />
+    <ClInclude Include="amrnb\ph_disp.h" />
+    <ClInclude Include="amrnb\post_pro.h" />
+    <ClInclude Include="amrnb\pow2.h" />
+    <ClInclude Include="amrnb\pred_lt.h" />
+    <ClInclude Include="amrnb\preemph.h" />
+    <ClInclude Include="amrnb\pstfilt.h" />
+    <ClInclude Include="amrnb\pvamrnbdecoder_api.h" />
+    <ClInclude Include="amrnb\pvgsmamr.h" />
+    <ClInclude Include="amrnb\pvgsmamrdecoder.h" />
+    <ClInclude Include="amrnb\pvgsmamrdecoderinterface.h" />
+    <ClInclude Include="amrnb\pvgsmamrdecoder_dpi.h" />
+    <ClInclude Include="amrnb\p_ol_wgh.h" />
+    <ClInclude Include="amrnb\qgain475_tab.h" />
+    <ClInclude Include="amrnb\qua_gain.h" />
+    <ClInclude Include="amrnb\qua_gain_tbl.h" />
+    <ClInclude Include="amrnb\q_plsf.h" />
+    <ClInclude Include="amrnb\q_plsf_3_tbl.h" />
+    <ClInclude Include="amrnb\q_plsf_5_tbl.h" />
+    <ClInclude Include="amrnb\reorder.h" />
+    <ClInclude Include="amrnb\residu.h" />
+    <ClInclude Include="amrnb\reverse_bits.h" />
+    <ClInclude Include="amrnb\round.h" />
+    <ClInclude Include="amrnb\set_zero.h" />
+    <ClInclude Include="amrnb\shl.h" />
+    <ClInclude Include="amrnb\shr.h" />
+    <ClInclude Include="amrnb\shr_r.h" />
+    <ClInclude Include="amrnb\sp_dec.h" />
+    <ClInclude Include="amrnb\sqrt_l.h" />
+    <ClInclude Include="amrnb\sub.h" />
+    <ClInclude Include="amrnb\syn_filt.h" />
+    <ClInclude Include="amrnb\typedef.h" />
+    <ClInclude Include="amrnb\weight_a.h" />
+    <ClInclude Include="amrnb\window_tab.h" />
+    <ClInclude Include="amrnb\wmf_to_ets.h" />
+    <ClInclude Include="Decoder.h" />
+    <ClInclude Include="framework.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="aimp_sdk\apiTypes.cpp" />
+    <ClCompile Include="aimp_sdk\Helpers\apiWrappers.cpp" />
+    <ClCompile Include="aimp_sdk\testAll.cpp" />
+    <ClCompile Include="amrnb\add.cpp" />
+    <ClCompile Include="amrnb\agc.cpp" />
+    <ClCompile Include="amrnb\amrdecode.cpp" />
+    <ClCompile Include="amrnb\az_lsp.cpp" />
+    <ClCompile Include="amrnb\a_refl.cpp" />
+    <ClCompile Include="amrnb\bgnscd.cpp" />
+    <ClCompile Include="amrnb\bitno_tab.cpp" />
+    <ClCompile Include="amrnb\bitreorder_tab.cpp" />
+    <ClCompile Include="amrnb\b_cn_cod.cpp" />
+    <ClCompile Include="amrnb\c2_9pf_tab.cpp" />
+    <ClCompile Include="amrnb\c_g_aver.cpp" />
+    <ClCompile Include="amrnb\d1035pf.cpp" />
+    <ClCompile Include="amrnb\d2_11pf.cpp" />
+    <ClCompile Include="amrnb\d2_9pf.cpp" />
+    <ClCompile Include="amrnb\d3_14pf.cpp" />
+    <ClCompile Include="amrnb\d4_17pf.cpp" />
+    <ClCompile Include="amrnb\d8_31pf.cpp" />
+    <ClCompile Include="amrnb\dec_amr.cpp" />
+    <ClCompile Include="amrnb\dec_gain.cpp" />
+    <ClCompile Include="amrnb\dec_input_format_tab.cpp" />
+    <ClCompile Include="amrnb\dec_lag3.cpp" />
+    <ClCompile Include="amrnb\dec_lag6.cpp" />
+    <ClCompile Include="amrnb\div_32.cpp" />
+    <ClCompile Include="amrnb\div_s.cpp" />
+    <ClCompile Include="amrnb\dtx_dec.cpp" />
+    <ClCompile Include="amrnb\d_gain_c.cpp" />
+    <ClCompile Include="amrnb\d_gain_p.cpp" />
+    <ClCompile Include="amrnb\d_plsf.cpp" />
+    <ClCompile Include="amrnb\d_plsf_3.cpp" />
+    <ClCompile Include="amrnb\d_plsf_5.cpp" />
+    <ClCompile Include="amrnb\ec_gains.cpp" />
+    <ClCompile Include="amrnb\extract_h.cpp" />
+    <ClCompile Include="amrnb\extract_l.cpp" />
+    <ClCompile Include="amrnb\ex_ctrl.cpp" />
+    <ClCompile Include="amrnb\gains_tbl.cpp" />
+    <ClCompile Include="amrnb\gc_pred.cpp" />
+    <ClCompile Include="amrnb\get_const_tbls.cpp" />
+    <ClCompile Include="amrnb\gmed_n.cpp" />
+    <ClCompile Include="amrnb\gray_tbl.cpp" />
+    <ClCompile Include="amrnb\grid_tbl.cpp" />
+    <ClCompile Include="amrnb\if2_to_ets.cpp" />
+    <ClCompile Include="amrnb\int_lpc.cpp" />
+    <ClCompile Include="amrnb\int_lsf.cpp" />
+    <ClCompile Include="amrnb\inv_sqrt.cpp" />
+    <ClCompile Include="amrnb\inv_sqrt_tbl.cpp" />
+    <ClCompile Include="amrnb\log2.cpp" />
+    <ClCompile Include="amrnb\log2_norm.cpp" />
+    <ClCompile Include="amrnb\log2_tbl.cpp" />
+    <ClCompile Include="amrnb\lsfwt.cpp" />
+    <ClCompile Include="amrnb\lsp.cpp" />
+    <ClCompile Include="amrnb\lsp_avg.cpp" />
+    <ClCompile Include="amrnb\lsp_az.cpp" />
+    <ClCompile Include="amrnb\lsp_lsf.cpp" />
+    <ClCompile Include="amrnb\lsp_lsf_tbl.cpp" />
+    <ClCompile Include="amrnb\lsp_tab.cpp" />
+    <ClCompile Include="amrnb\l_abs.cpp" />
+    <ClCompile Include="amrnb\l_deposit_h.cpp" />
+    <ClCompile Include="amrnb\l_deposit_l.cpp" />
+    <ClCompile Include="amrnb\l_shr_r.cpp" />
+    <ClCompile Include="amrnb\mult_r.cpp" />
+    <ClCompile Include="amrnb\negate.cpp" />
+    <ClCompile Include="amrnb\norm_l.cpp" />
+    <ClCompile Include="amrnb\norm_s.cpp" />
+    <ClCompile Include="amrnb\overflow_tbl.cpp" />
+    <ClCompile Include="amrnb\ph_disp.cpp" />
+    <ClCompile Include="amrnb\ph_disp_tab.cpp" />
+    <ClCompile Include="amrnb\post_pro.cpp" />
+    <ClCompile Include="amrnb\pow2.cpp" />
+    <ClCompile Include="amrnb\pow2_tbl.cpp" />
+    <ClCompile Include="amrnb\pred_lt.cpp" />
+    <ClCompile Include="amrnb\preemph.cpp" />
+    <ClCompile Include="amrnb\pstfilt.cpp" />
+    <ClCompile Include="amrnb\pvgsmamrdecoder.cpp" />
+    <ClCompile Include="amrnb\qgain475_tab.cpp" />
+    <ClCompile Include="amrnb\qua_gain_tbl.cpp" />
+    <ClCompile Include="amrnb\q_plsf.cpp" />
+    <ClCompile Include="amrnb\q_plsf_3.cpp" />
+    <ClCompile Include="amrnb\q_plsf_3_tbl.cpp" />
+    <ClCompile Include="amrnb\q_plsf_5.cpp" />
+    <ClCompile Include="amrnb\q_plsf_5_tbl.cpp" />
+    <ClCompile Include="amrnb\reorder.cpp" />
+    <ClCompile Include="amrnb\residu.cpp" />
+    <ClCompile Include="amrnb\round.cpp" />
+    <ClCompile Include="amrnb\set_zero.cpp" />
+    <ClCompile Include="amrnb\shr.cpp" />
+    <ClCompile Include="amrnb\shr_r.cpp" />
+    <ClCompile Include="amrnb\sp_dec.cpp" />
+    <ClCompile Include="amrnb\sqrt_l.cpp" />
+    <ClCompile Include="amrnb\sqrt_l_tbl.cpp" />
+    <ClCompile Include="amrnb\sub.cpp" />
+    <ClCompile Include="amrnb\syn_filt.cpp" />
+    <ClCompile Include="amrnb\weight_a.cpp" />
+    <ClCompile Include="amrnb\window_tab.cpp" />
+    <ClCompile Include="amrnb\wmf_to_ets.cpp" />
+    <ClCompile Include="amrnb\wrapper.cpp" />
+    <ClCompile Include="Decoder.cpp" />
+    <ClCompile Include="Plugin.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
