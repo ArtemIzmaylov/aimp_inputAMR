@@ -1,5 +1,7 @@
 ﻿unit AIMP.InputAMR.Plugin;
 
+{$I AIMP.InputAMR.inc}
+
 interface
 
 uses

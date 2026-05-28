@@ -1,5 +1,7 @@
 ﻿unit AIMP.InputAMR.Decoder;
 
+{$I AIMP.InputAMR.inc}
+
 interface
 
 uses
