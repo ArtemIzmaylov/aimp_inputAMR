@@ -64,7 +64,7 @@ void Decoder::buildSeekTable()
 
 BOOL WINAPI Decoder::GetFileInfo(IAIMPFileInfo* FileInfo)
 {
-	return FALSE;
+	return false;
 }
 
 BOOL WINAPI Decoder::GetStreamInfo(INT32* SampleRate, INT32* Channels, INT32* SampleFormat)
@@ -72,17 +72,17 @@ BOOL WINAPI Decoder::GetStreamInfo(INT32* SampleRate, INT32* Channels, INT32* Sa
 	(*Channels) = Decoder::Channels;
 	(*SampleRate) = this->sampleRate;
 	(*SampleFormat) = AIMP_DECODER_SAMPLEFORMAT_16BIT;
-	return TRUE;
+	return true;
 }
 
 BOOL WINAPI Decoder::IsSeekable()
 {
-	return TRUE;
+	return true;
 }
 
 BOOL WINAPI Decoder::IsRealTimeStream()
 {
-	return FALSE;
+	return false;
 }
 
 BOOL Decoder::isOurRIID(REFIID riid)
@@ -122,9 +122,9 @@ BOOL WINAPI Decoder::SetPosition(const INT64 Value)
 		stream->Seek(seekTable.at(frame), AIMP_STREAM_SEEKMODE_FROM_BEGINNING);
 		bufferAMR->used = 0;
 		bufferPCM->used = 0;
-		return TRUE;
+		return true;
 	}
-	return FALSE;
+	return false;
 }
 
 INT32 WINAPI Decoder::Read(void* target, INT32 count)
@@ -156,16 +156,16 @@ BOOL Decoder::readFrameAndDecodeIt()
 	{
 		stream->Read(&bufferAMR->data[0], 1); // frame ID
 		int frameSize = getFrameSize(bufferAMR->data[0]);
-		if (frameSize < 0) return FALSE;
+		if (frameSize < 0) return false;
 		bufferAMR->used = frameSize + 1;		
 		stream->Read(&bufferAMR->data[1], frameSize); // frame data
 		decode();
 		bufferPCM->used = bufferPCM->size;
-		return TRUE;
+		return true;
 	}
 	catch (const std::exception&) 
 	{
-		return FALSE;
+		return false;
 	}
 }
 
