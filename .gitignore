@@ -3,3 +3,5 @@
 obj
 *.so
 *.aimppack
+aimp_sdk
+.vs
