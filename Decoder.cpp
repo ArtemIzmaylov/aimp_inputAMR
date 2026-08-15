@@ -97,7 +97,7 @@ INT64 WINAPI Decoder::GetAvailableData()
 
 INT64 WINAPI Decoder::GetSize()
 {
-	return seekTable.size() * bytesPerFrame;
+	return (seekTable.size() - 1) * bytesPerFrame;
 }
 
 INT64 WINAPI Decoder::GetPosition()
@@ -154,11 +154,13 @@ BOOL Decoder::readFrameAndDecodeIt()
 {
 	try 
 	{
-		stream->Read(&bufferAMR->data[0], 1); // frame ID
+		int read = stream->Read(&bufferAMR->data[0], 1); // frame ID
+		if (read == 0) return false;
 		int frameSize = getFrameSize(bufferAMR->data[0]);
 		if (frameSize < 0) return false;
 		bufferAMR->used = frameSize + 1;		
-		stream->Read(&bufferAMR->data[1], frameSize); // frame data
+		read = stream->Read(&bufferAMR->data[1], frameSize); // frame data
+		if (read != frameSize) return false;
 		decode();
 		bufferPCM->used = bufferPCM->size;
 		return true;
